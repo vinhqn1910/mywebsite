@@ -93,7 +93,7 @@ nav{
 }
 
 nav.hide {
-    width: 0;
+    width: 0px;
 }
 
 nav ul{
@@ -335,7 +335,7 @@ h2 {
 #nhietdo,
 #doam,
 #gas, 
-#khongkhi{
+#kkhi{
     position: relative;
     top: -50px;
     left: 70px;
@@ -350,8 +350,8 @@ h2 {
     margin: 1%;
 }
 .thongso {
-    margin-top: -200px;
-    margin-left: 65px;
+    margin-top: -210px;
+    margin-left: 70px;
     font-size: 35px;
     font-weight: 400;
     font-family: Times New Roman;
