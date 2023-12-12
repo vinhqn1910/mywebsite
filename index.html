@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<!------------------------------time------------------->
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h3> Hệ thống cảnh báo cháy </h3>
+        </div>
+    </div>
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/th.vinhh.02/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/th_vinhh_/"><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.youtube.com/channel/UC2yXqgObd6JilXABYIFZXtg"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <div class="footerNav">
+            <ul>
+                <li>Liên hệ:</li>
+                <li>Nguyễn Thành Vĩnh</li>
+                <li>MSSV: 20161397</li>
+                <li>Điện thoại: 0397507254 </li>
+                <li>Email: 20161397@student.hcmute.edu.vn</li>
+            </ul>
+        </div>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023 Designed by <span class="Designer"></span>Thành Vĩnh </p>
+
+        </div>
+    </div>
+</footer>
+    <nav>
+        <div class="toggle_menu"><ion-icon name="menu-outline"></ion-icon></div>
+        <ul>
+            <li><a href="#">
+                <ion-icon name="home-outline"></ion-icon>
+                Trang chủ
+            </a></li>
+             <li><a href="#">
+                <ion-icon name="newspaper-outline"></ion-icon>
+                Tin tức
+            </a></li>
+            <li><a href="#">
+                <ion-icon name="information-circle-outline"></ion-icon>
+                Thông tin
+            </a></li>
+        </ul>
+    </nav>
+
+    <section class="content">
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <form >
+        <h2>Thông số cảm biến</h2>
+        <div class="analystic">
+            <div class="box box1">
+                <div class="temp">
+                    <a href="" class="box-icon-link">
+                        <i class="fa-solid fa-temperature-three-quarters"></i>
+                    </a>
+                    <p class="analystic-value">
+                        <div  class="dv">
+                            <span id="nhietdo">0</span>
+                            <span id="kihieu">°C</span>
+                        </div>
+                    </p>                            
+                    <h4 class="thongso">Nhiệt độ</h4>
+                </div>
+            </div>
+            <div class="box box2">
+                <div class="humi">
+                    <a href="" class="box-icon-link">
+                        <i class="fa-solid fa-percent"></i>
+                    </a>
+                    <p class="analystic-value">
+                        <div  class="dv">
+                            <span id="doam">0</span>
+                            <span id="kihieu">%</span>
+                        </div>
+                    </p> 
+                    <h4 class="thongso">Độ ẩm</h4>
+                </div>
+            </div>
+            <div class="box box3">
+                <div class="rain">
+                    <a href="" class="box-icon-link">
+                        <i class=" fa-solid fa-fire-flame-simple"></i>
+                    </a>
+                    <p class="analystic-value">
+                        <div  class="dv">
+                            <span id="gas">0</span>
+                        </div>
+                    </p> 
+                    <h4 class="thongso"> Khí Gas</h4>
+                </div>
+            </div>
+
+            <div class="box box4">
+                <div class="kk">
+                    <a href="" class="box-icon-link">
+                        <i class="fa-solid fa-wind"></i>
+                    </a>
+                    <p class="analystic-value">
+                        <div  class="dv">
+                            <span id="khongkhi">0</span>
+                        </div>
+                    </p> 
+                    <h4 class="thongso"> Mật độ không khí</h4>
+                </div>
+            </div>
+
+        </div>
+    </form>
+    <hr>
+    <form>
+        <h2>Thiết bị</h2>
+        <div class="box device device1">
+            <h4 class="namedevice">Lamp
+                <!-- <i class="fa-regular fa-lightbulb" style="color: #ff0000;"></i> -->
+            </h4>
+            <div class="control">
+                <div class="statusdevice">
+                    <h3 id="lamp_1_state">OFF</h3>
+                </div>                        
+                <div class="toggle">
+                    <div class="toggle-button" id="lamp_1_toggle"></div>        
+                </div>
+            </div>
+        </div>                           
+        <div class="box device device2">
+            <h4 class="namedevice">Fan</h4>
+            <div class="control">
+                <div class="statusdevice">
+                    <h3 id="fan_state">OFF</h3>
+                </div>
+                <div class="toggle" >
+                    <div class="toggle-button" id="fan_toggle"></div>        
+                </div>
+            </div>
+        </div>
+        <div class="box device device3">
+            <h4 class="namedevice">Ring</h4>
+            <div class="control">
+                <div class="statusdevice">
+                    <h3 id="ring_state">OFF</h3>
+                </div>
+                <div class="toggle" >
+                    <div class="toggle-button" id="ring_toggle"></div>        
+                </div>
+            </div>
+        </div>
+    </form>
+
+</body>
+    <script>
+    let hrs =document.getElementById("hrs");
+    let min =document.getElementById("min");
+    let sec =document.getElementById("sec");
+    
+    setInterval(()=>{
+        let currentTime = new Date();
+    
+        hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+        min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+        sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+    },1000)
+    </script>
+
+    <script src="https://unpkg.com/ionicons@7.1.0/dist/ionicons.js"></script>
+    <script>
+        const nav = document.querySelector('nav');
+        const toggle_menu = document.querySelector('.toggle_menu');
+        const content = document.querySelector('content');
+
+        toggle_menu.onclick = function(){
+            nav.classList.toggle('hide');
+            content.classList.toggle('expand');
+        }
+    </script>
+    
+    <script type="module" src="main.js"></script>
+        
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA0vfH7AL6JiQIcUjiP4nqdnchbbOvCfzg",
+  authDomain: "doan2-2d60b.firebaseapp.com",
+  databaseURL: "https://doan2-2d60b-default-rtdb.firebaseio.com",
+  projectId: "doan2-2d60b",
+  storageBucket: "doan2-2d60b.appspot.com",
+  messagingSenderId: "607753676427",
+  appId: "1:607753676427:web:341fb8d5e46a6db9ab168e",
+  measurementId: "G-MLM3CMGG9M"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+  //functions
+  // make sure that the name in ' ' match with name of your database child
+  var nhietDo = document.getElementById('nhietdo');
+  var dbRef = firebase.database().ref().child('Nhiet do');
+  var doAm = document.getElementById('doam');
+  var dbRef2 = firebase.database().ref().child('Do am');
+  var khiGas = document.getElementById('gas');
+  var dbRef3 = firebase.database().ref().child('Khi gas');
+  var kokhi = document.getElementById('kkhi');
+  var dbRef4 = firebase.database().ref().child('Khong Khi');
+  dbRef.on('value', snap => nhietDo.innerText = snap.val());
+  dbRef2.on('value', snap => doAm.innerText = snap.val());
+  dbRef3.on('value', snap => khiGas.innerText = snap.val());
+  dbRef4.on('value', snap => kokhi.innerText = snap.val());
+ 
+ 
+</script>
+
+</html>

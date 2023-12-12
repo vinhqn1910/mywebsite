@@ -1,0 +1,430 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#header{
+    background: rgba(0, 0, 0, 0.61);
+    color: rgb(253, 253, 253);
+    padding: 10px;
+    text-align: le;
+    font-size: 2.5em;
+    font-family: cambria;
+}
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    color: #000000;
+    position: relative;
+}
+.container{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 20%;
+    right: -9%;
+    transform: translate(-50%,-50%);
+}
+.clock{
+    width: 100%;
+    height: 110%;
+    background: rgba(235, 0, 255,0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+.container::before{
+    content: '';
+    width: 105px;
+    height: 105px;
+    background: #f41b75;
+    border-radius: 5px;
+    position: absolute;
+    left: -38px;
+    top: -25px;
+    z-index: -1;
+}
+.container::after{
+    content: '';
+    width: 105px;
+    height: 105px;
+    background: #419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: -20px;
+    bottom: -40px;
+    z-index: -1;
+}
+.clock span{
+    font-size: 40px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -20px;
+    left: 52%;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MINS';
+}
+#sec::after{
+    content: 'SEC';
+}
+/*------------------------------time-------------------*/
+nav{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #f1f1f1;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid rgba(0, 0, 0,0.1);
+    z-index: 1000;
+    transition: ease-in-out 0.5s;   
+}
+
+nav.hide {
+    width: 0;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+
+
+nav ul li a{
+    width: 100%;
+    color: #1e90ff;
+    font-size: 1.2em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding: 15px;
+    transition: linear 0.5s;
+}
+nav ul li a ion-icon{
+    margin: 0 20px;
+    color: #1e90ff;
+    font-size: 1.2em;
+    transition: linear 0.2s;
+}
+
+nav ul li a:hover {
+    background: #1e90ff;
+    color: #ffffff;
+}
+
+nav ul li a:hover ion-icon {
+    color: #ffffff;
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: calc(100% - 250px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: ease-in-out 0.5s;
+}
+.content.expand {
+    width: 100%;
+    left: 0;
+}
+
+.content h2{
+    font-size: 4.5em;
+    color: #1e90ff;
+    text-transform: uppercase;
+}
+
+nav .toggle_menu {
+    position: absolute;
+    top: 100px;
+    right: -46px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    border-radius: 0 10px 10px 0; 
+    cursor: pointer;
+    transition: linear 0.2s;
+}
+
+nav .toggle_menu ion-icon {
+    color: #1e90ff;
+    font-size: 1.5em;
+    transition:  linear 0.2s;
+}
+
+nav .toggle_menu:hover {
+    background: #1e90ff;
+}
+
+nav .toggle_menu:hover ion-icon {
+    color: #ffffff;
+}
+
+/*------------------------------footer-------------------*/
+footer{
+    background-color: rgba(0, 0, 0, 0.61);
+    width: 100%;
+    min-height: 150px;
+    position: absolute;
+    top: 160%;
+}
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: #000000;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover{
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: #ffffff;
+    transition: 0.5s;
+}
+
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerBottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+/*-------------------------------*/
+
+.analystic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 20px;
+    box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.15),
+    inset -1px -1px 10px rgba(0,0,0,0.2 ),
+    -15px -15px 35px rgba(255,255,255,0.55);
+}
+.box1{
+    background-color: #95e2f1;
+}
+
+.box2{
+    background-color: #e5a0e0;
+}
+
+.box3{
+    background-color: #eee4a4;
+}
+
+.box4{
+    background-color: rgb(176, 175, 233);
+}
+
+.humi, 
+.temp,
+.rain, 
+.kk{
+    padding: 25px;
+}
+.box-icon-link{
+    
+    font-size: 4rem;
+    color: black;
+    display: inline-block;
+    align-items: center;
+}
+
+
+.dv{
+    font-size: 3.5rem;
+    padding: 0;
+    margin: 50px 0 20px;
+    font-weight: bold;
+}
+
+hr{
+    height: 2px;
+    width: 80%;
+    padding-left: 5px;
+    background-color: #535353;
+    box-shadow: 5px 5px 15px #152b4a66,
+    -6px -6px 10px rgba(255,255,255,1);
+}
+
+h1 {
+    font-size: 4rem;
+    padding: 30px 70px;
+    margin: 0;
+}
+
+h2 {
+    display: flex;
+    padding : 2%;
+    padding-left: 30%;
+    margin-left: 15%;
+    align-items: 10px;
+    font-size: 40px;
+    font-style: italic;
+    font-family: cambria;
+    margin: 20px 0;
+}
+
+#nhietdo,
+#doam,
+#gas, 
+#khongkhi{
+    position: relative;
+    top: -50px;
+    left: 70px;
+    font-size: 50px;
+    margin: 1%;
+}
+#kihieu{
+    position: relative;
+    top: -50px;
+    left: 75px;
+    font-size: 50px;
+    margin: 1%;
+}
+.thongso {
+    margin-top: -200px;
+    margin-left: 65px;
+    font-size: 35px;
+    font-weight: 400;
+    font-family: Times New Roman;
+}
+
+.device {
+    
+    position: relative;
+    height: 200px;
+    width: 400px;
+    background-color: #f1f1f1;   
+}
+
+.device .namedevice{
+    /* display: inline-block;
+    align-items: center;
+    margin-left: 26px;
+    margin-top: 45px; */
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    font-size: 2rem;
+    font-weight: 400; 
+}
+
+.device .control {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    margin-top: -20px;
+}
+
+.device .control .statusdevice{
+    position: absolute;
+    left: 10%;
+    margin-top: 20px;
+    font-size: 3.5rem;
+}
+
+.device .control .toggle {
+    position: absolute;
+    left: 15rem;
+    width: 90px;
+    height: 50px;
+    appearance: none;
+    background: #333;
+    border-radius: 26px;
+    position: relative;
+}
+
+.device .control .toggle .toggle-button{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5.5px;
+    left: 5.5px;
+    background: #efe2bf;
+    border-radius: 50%;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.device .control .toggle.active{
+    background: #83d8ff;
+}
+
+.device .control .toggle.active .toggle-button{
+    left: 45px;
+}
