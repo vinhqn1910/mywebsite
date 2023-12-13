@@ -5,10 +5,30 @@
     box-sizing: border-box;
 }
 
-#header{
-    background: rgba(0, 0, 0, 0.61);
+.wrapper{
+
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    right: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.header{
     color: rgb(253, 253, 253);
-    padding: 5px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 10px;
+    height: 80px;
+    width: 650px;
+    border-radius: 40px;
+    align-items: center; 
+    display: flex;
+    box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.15),
+    inset -1px -1px 10px rgba(0,0,0,0.2 ),
+    -15px -15px 35px rgba(255,255,255,0.55);
+    background-color:rgba(0, 0, 0, 0.61);
+    margin: 1px;
 
 }
 

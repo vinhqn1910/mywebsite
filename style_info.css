@@ -5,10 +5,30 @@
     box-sizing: border-box;
 }
 
-#header{
-    background: rgba(0, 0, 0, 0.61);
+.wrapper{
+
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    right: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.header{
     color: rgb(253, 253, 253);
-    padding: 5px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    padding: 10px;
+    height: 80px;
+    width: 650px;
+    border-radius: 40px;
+    align-items: center; 
+    display: flex;
+    box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.15),
+    inset -1px -1px 10px rgba(0,0,0,0.2 ),
+    -15px -15px 35px rgba(255,255,255,0.55);
+    background-color:rgba(0, 0, 0, 0.61);
+    margin: 1px;
 
 }
 
@@ -181,88 +201,6 @@ footer{
     transition: 0.5s;
 }
 
-/*-------------------------------*/
-
-.analystic {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-}
-
-.box {
-    height: 200px;
-    width: 300px;
-    border-radius: 25px;
-    display: inline-block;
-    margin: 20px;
-    box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.15),
-    inset -1px -1px 10px rgba(0,0,0,0.2 ),
-    -15px -15px 35px rgba(255,255,255,0.55);
-}
-.box1{
-    background-color: #95e2f1;
-}
-
-.box2{
-    background-color: #e5a0e0;
-}
-
-.box3{
-    background-color: #eee4a4;
-}
-
-.box4{
-    background-color: rgb(176, 175, 233);
-}
-
-.humi, 
-.temp,
-.rain, 
-.kk{
-    padding: 25px;
-}
-.box-icon-link{
-    
-    font-size: 4rem;
-    color: black;
-    display: inline-block;
-    align-items: center;
-}
-
-
-.dv{
-    font-size: 3.5rem;
-    padding: 0;
-    margin: 50px 0 20px;
-    font-weight: bold;
-}
-
-hr{
-    height: 2px;
-    width: 80%;
-    padding-left: 5px;
-    background-color: #535353;
-    box-shadow: 5px 5px 15px #152b4a66,
-    -6px -6px 10px rgba(255,255,255,1);
-}
-
-h1 {
-    font-size: 4rem;
-    padding: 30px 70px;
-    margin: 0;
-}
-
-h2 {
-    display: flex;
-    padding : 2%;
-    padding-left: 30%;
-    margin-left: 15%;
-    align-items: 10px;
-    font-size: 40px;
-    font-style: italic;
-    font-family: cambria;
-    margin: 20px 0;
-}
 
 h3 {
     display: flex;
