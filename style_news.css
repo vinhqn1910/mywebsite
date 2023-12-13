@@ -183,87 +183,6 @@ footer{
 
 /*-------------------------------*/
 
-.analystic {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-}
-
-.box {
-    height: 200px;
-    width: 300px;
-    border-radius: 25px;
-    display: inline-block;
-    margin: 20px;
-    box-shadow: 30px 30px 30px -10px rgba(0,0,0,0.15),
-    inset -1px -1px 10px rgba(0,0,0,0.2 ),
-    -15px -15px 35px rgba(255,255,255,0.55);
-}
-.box1{
-    background-color: #95e2f1;
-}
-
-.box2{
-    background-color: #e5a0e0;
-}
-
-.box3{
-    background-color: #eee4a4;
-}
-
-.box4{
-    background-color: rgb(176, 175, 233);
-}
-
-.humi, 
-.temp,
-.rain, 
-.kk{
-    padding: 25px;
-}
-.box-icon-link{
-    
-    font-size: 4rem;
-    color: black;
-    display: inline-block;
-    align-items: center;
-}
-
-
-.dv{
-    font-size: 3.5rem;
-    padding: 0;
-    margin: 50px 0 20px;
-    font-weight: bold;
-}
-
-hr{
-    height: 2px;
-    width: 80%;
-    padding-left: 5px;
-    background-color: #535353;
-    box-shadow: 5px 5px 15px #152b4a66,
-    -6px -6px 10px rgba(255,255,255,1);
-}
-
-h1 {
-    font-size: 4rem;
-    padding: 30px 70px;
-    margin: 0;
-}
-
-h2 {
-    display: flex;
-    padding : 2%;
-    padding-left: 30%;
-    margin-left: 15%;
-    align-items: 10px;
-    font-size: 40px;
-    font-style: italic;
-    font-family: cambria;
-    margin: 20px 0;
-}
-
 h3 {
     display: flex;
     margin-left: 15%;
@@ -277,4 +196,133 @@ h3 {
 .imageChange {
     max-width: 80px;
     height: auto;
+    }
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        background: white;
+    }
+    
+    .header, .navbar, .logo, .menu, .body-content {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background: white;
+    }
+    
+    .navbar {
+        height: 30px;
+        border-bottom: solid #e6e8e8 1px;
+    }
+    
+    .navbar .left {
+        float: left;
+        padding: 10px;
+    }
+    
+    .navbar .right {
+        float: right;
+        padding: 10px;
+    }
+    
+    .logo {
+        display: inline-block;
+    }
+    
+    .logo .search-form {
+        float: right;
+        margin-top: 25px;
+        margin-right: 10px;
+        padding: 3px;
+        border: solid #b8b8b8 1px;
+        border-radius: 5px;
+    }
+    
+    .logo .search-form input {
+        width: 250px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+    }
+    
+    .logo .search-form input:hover {
+        border: none;
+        outline: none;
+    }
+    
+    .logo .search-form button {
+        font-size: 20px;
+        border: none;
+        background: transparent;
+    }
+    
+    .menu {
+        background: #439c66;
+    }
+    
+    .menu ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .menu ul li {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 15px;
+        cursor: pointer;
+    }
+    
+    .menu ul li:hover {
+        background: #9c7e43;
+    }
+    
+    .body-content {
+        display: flex;
+    }
+    
+    .main-content {
+        width: 70%;
+        float: left;
+        background: white;
+        height: 100%;
+    }
+    
+    .menu-right {
+        width: 30%;
+        float: left;
+        background: white;
+    }
+    
+    .row {
+        width: 100%;
+        display: flex;
+    }
+    
+    .col-4 {
+        width: calc(100%/3);
+        float: left;
+    }
+    
+    .col-8 {
+        width: calc(2 * 100%/3);
+        float: left;
+    }
+    
+    .group {
+        width: 100%;
+        display: block;
+    }
+    
+    .group h2 {
+        background: #439c66;
+        padding: 10px;
+        color: white;
+    }
+    
+    .content {
+        padding: 10px;
     }
