@@ -235,7 +235,7 @@
   var khiGas = document.getElementById('gas');
   var dbRef3 = firebase.database().ref().child('Khi gas');
   var kokhi = document.getElementById('kkhi');
-  var dbRef4 = firebase.database().ref().child('Khong Khi');
+  var dbRef4 = firebase.database().ref().child('Khong khi');
   dbRef.on('value', snap => nhietDo.innerText = snap.val());
   dbRef2.on('value', snap => doAm.innerText = snap.val());
   dbRef3.on('value', snap => khiGas.innerText = snap.val());
