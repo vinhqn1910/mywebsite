@@ -27,9 +27,9 @@ function toggleLamp(toggleElem, stateElem, path) {
 }
 
 let lamps = [
-  {toggle: document.getElementById('lamp_1_toggle'), state: document.getElementById('lamp_1_state'), path: 'device/lamp1'},
-  {toggle: document.getElementById('fan_toggle'), state: document.getElementById('fan_state'), path: 'device/fan'},
-  {toggle: document.getElementById('ring_toggle'), state: document.getElementById('ring_state'), path: 'device/ring'}
+  {toggle: document.getElementById('lamp_1_toggle'), state: document.getElementById('lamp_1_state'), path: 'device/Device1'},
+  {toggle: document.getElementById('fan_toggle'), state: document.getElementById('fan_state'), path: 'device/Device2'},
+  {toggle: document.getElementById('ring_toggle'), state: document.getElementById('ring_state'), path: 'device/Mode'}
 ];
   
 lamps.forEach(function(lamp) {
